@@ -10,4 +10,13 @@ CKEDITOR.editorConfig = function( config ) {
 	config.skin = 'office2013';
 	config.extraPlugins = 'mediaembed';
 	config.allowedContent = true;
+
+	config.toolbar = [
+		{name: 'tools', items: ['Source', 'Maximize']},
+		{name: 'clipboard', items: ['Cut','Copy','Paste','PasteText','PasteFromWord','-', 'Image', 'Mediaembed', 'Table','HorizontalRule', 'Styles','Format','Font','FontSize']},
+		'/',
+		{name: 'basicstyles', items: ['Bold','Italic','Underline','Strike','-','RemoveFormat', 'TextColor','BGColor']},
+		{name: 'paragraph', items: ['NumberedList','BulletedList','-', '-','Blockquote', '-','JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock' ]},
+		{name: 'links', items: ['Link','Unlink']},
+	];
 };
